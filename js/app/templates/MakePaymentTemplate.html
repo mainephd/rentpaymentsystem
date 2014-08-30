@@ -1,0 +1,22 @@
+﻿<form class="form-signin" role="form">
+    <h2 class="form-signin-heading">Schedule Payment</h2>
+    <div class="input-group form-input-group">
+        <span class="input-group-addon">$</span>
+        <input id="paymentamount" type="text" class="form-control" placeholder="Payment Amount" required autofocus>
+    </div>
+    <div class="input-group form-input-group">
+        <div id="accountContainer" class="input-group-btn dropdown">
+            <button type="button" class="btn btn-default dropdown-toggle form-control" id="accountDropdown" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="accountDropdown">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-account="1234">XXXX-XXXX-XXXX-1234</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-account="1478">XXXX-XXXX-XXXX-1478</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" data-account="9514">XXXX-XXXX-XXXX-9514</a></li>
+            </ul>
+        </div>
+        <input type="text" id="paymentaccount" class="form-control" placeholder="Choose Account" required>
+    </div>
+    <div class="input-group date form-input-group">
+        <input type="text" id="paymentdate" class="form-control" placeholder="Payment Date" required><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Schedule</button>
+</form>

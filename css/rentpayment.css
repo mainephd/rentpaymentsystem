@@ -1,0 +1,112 @@
+html body.wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+    height: 100%;
+}
+html {
+    overflow-x: hidden;
+}
+.navbar-toggle-left {
+  float: left;
+  margin-left: 10px;
+}
+.navbar-toggle-right {
+  float: right;
+  margin-right: 10px;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+     position: relative;
+     height: auto;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     padding: 10px;
+     font-size: 16px;
+ }
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input   {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-input-group {
+    margin-bottom: 10px;
+}
+div.dataTables_length label {
+    width: 460px;
+    float: left;
+    text-align: left;
+}
+
+div.dataTables_length select {
+    width: 75px;
+}
+
+div.dataTables_filter label {
+    float: right;
+    width: 460px;
+}
+
+div.dataTables_info {
+    padding-top: 8px;
+}
+
+div.dataTables_paginate {
+    float: right;
+    margin: 0;
+}
+
+table {
+    margin: 1em 0;
+    clear: both;
+}
+
+@media screen and (max-width: 767px) { 
+  .row-offcanvas {
+    position: relative;
+    left: 0;
+    -webkit-transition: left .3s ease-in;
+    -most-transition: left .3s ease-in;
+    transition: left .3s ease-in;
+  }
+  /* sidebar */
+  .sidebar-offcanvas {    
+    width: 80%;
+    position: absolute;
+    top: 0;
+    background-color: #F7F7F7;
+    padding: 0;
+    height: 100%;
+  }
+  .sidebar-offcanvas-left {
+      left: -80%;
+  }
+  .sidebar-offcanvas-right {
+      right: -80%;
+  }
+  /* content */
+  .row-offcanvas.active-left {
+    left: 80%;
+  }
+   .row-offcanvas.active-right {
+    right: 80%;
+  }
+}

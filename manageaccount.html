@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment System</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/backgrid.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.css">
+    <link rel="stylesheet" href="css/rentpayment.css" >
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="accounthome.html">Payment System</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Logout</a></li>
+                <li><a href="profile.html">Jermaine Davis</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h2>Manage Account</h2>
+        <ul id="accounttab" class="nav nav-tabs">
+            <li class="active"><a href="#accounts" data-toggle="tab">Accounts</a></li>
+            <li><a href="#accountdetail" data-toggle="tab">Account Details</a></li>
+        </ul>
+        <div id="accountTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="accounts">
+                <table id="accountlist">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Last 4</th>
+                        <th>Expiration</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Add Card</button>
+            </div>
+            <div class="tab-pane fade" id="accountdetail">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend>Account Details</legend>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="name">Name:</label>
+                            <div class="col-md-4">
+                                <input id="name" name="name" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="last4">Last 4:</label>
+                            <div class="col-md-4">
+                                <input id="last4" name="last4" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="expires">Expires:</label>
+                            <div class="col-md-4">
+                                <input id="expires" name="expires" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="cvc">CVC Code:</label>
+                            <div class="col-md-4">
+                                <input id="cvc" name="cvc" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="address1">Address:</label>
+                            <div class="col-md-4">
+                                <input id="address1" name="address1" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="address2"></label>
+                            <div class="col-md-4">
+                                <input id="address2" name="address2" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="city">City:</label>
+                            <div class="col-md-4">
+                                <input id="city" name="city" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="state">State:</label>
+                            <div class="col-md-4">
+                                <input id="state" name="state" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="zipcode">Zip:</label>
+                            <div class="col-md-4">
+                                <input id="zipcode" name="state" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <button class="btn btn-lg btn-primary btn-block" type="button">Back</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/rentpayment.js"></script>
+<script>
+   $(function(){
+       $('#accountlist').dataTable({
+            "bProcessing" : true,
+            "sDom": "<'row'<'span8'l><'span8'f>r>t<'row'<'span8'i><'span8'p>>",
+            "sAjaxSource" : 'data/accounts.json'
+       });
+
+       $('#accounttab a').click(function (e) {
+           e.preventDefault();
+           $(this).tab('show');
+       });
+   });
+</script>
+</body>
+</html>
