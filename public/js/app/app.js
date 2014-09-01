@@ -1,4 +1,4 @@
-﻿define(['marionette', 'views/LoginView', 'views/UnauthenticatedSidebarView'],
+define(['marionette', 'views/LoginView', 'views/UnauthenticatedSidebarView'],
     function (Marionette, LoginView, UnauthenticatedSidebarView) {
         'use strict';
         var app = new Marionette.Application();
@@ -7,7 +7,7 @@
         app.addRegions({       
             appcontentRegion: '#applicationContentRegion',
             sidebarRegion: '#sidebarRegion'
-        });
+        });        
         app.addInitializer(function () {
             app.appcontentRegion.show(maincontent);
             app.sidebarRegion.show(sidebar);
@@ -16,6 +16,6 @@
             $(".toggle-left-sidebar").on("click", function () {
                 $(".row-offcanvas").toggleClass("active-left");
             });
-        });
+        });        
         return window.app = app;
 });
