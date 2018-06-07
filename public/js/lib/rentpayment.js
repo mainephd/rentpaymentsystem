@@ -1,7 +1,4 @@
 /**
- * Created by JDW27B1 on 4/15/2014.
- */
-/**
  * Number.prototype.format(n, x, s, c)
  *
  * @param integer n: length of decimal
